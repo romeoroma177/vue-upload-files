@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  </head>
+  <body>
+
+    
+<div id="app">
+
+  <label class="btn btn-default">
+    <input type="file" ref="file" @change="selectFile" />
+  </label>
+
+  <button class="btn btn-success" :disabled="!selectedFiles" @click="upload">
+    Upload
+  </button>
+</div>
+    
+  </body>
+</html>
